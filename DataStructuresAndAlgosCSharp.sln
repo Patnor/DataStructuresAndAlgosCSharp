@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructuresAndAlgosCSharp", "DataStructuresAndAlgosCSharp\DataStructuresAndAlgosCSharp.csproj", "{4C103256-FE3E-461F-8B4E-2D4FBA1B7EAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C103256-FE3E-461F-8B4E-2D4FBA1B7EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C103256-FE3E-461F-8B4E-2D4FBA1B7EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C103256-FE3E-461F-8B4E-2D4FBA1B7EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C103256-FE3E-461F-8B4E-2D4FBA1B7EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A418724-A5BE-4DB2-A1AD-9655DA259AF2}
+	EndGlobalSection
+EndGlobal

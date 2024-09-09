@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructuresAndAlgosCSharp
 {
-    internal class InsertionSort_PN
+    public class InsertionSort_PN
     {
         /// <summary>
         /// Sorts an array of integers using the insertion sort algorithm.

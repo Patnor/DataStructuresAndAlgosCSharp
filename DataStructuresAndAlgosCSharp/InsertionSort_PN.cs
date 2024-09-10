@@ -31,5 +31,21 @@ namespace DataStructuresAndAlgosCSharp
                 nums[j + 1] = temp;
             }
         }
+
+        public static void InsertionSort<T>(T[] items) where T : IComparable<T>
+        {
+            for (int i = 1; i < items.Length; i++)
+            {
+                T temp = items[i];
+                int j = i - 1;
+
+                while (j > -1 && items[j].CompareTo(temp) > 0)
+                {
+                    items[j + 1] = items[j];
+                    j--;
+                }
+                items[j + 1] = temp;
+            }
+        }
     }
 }

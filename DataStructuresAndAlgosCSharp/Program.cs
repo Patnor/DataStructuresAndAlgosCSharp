@@ -12,7 +12,7 @@
             PrintArray(testArray);
 
             // Sort the array using InsertionSort
-            InsertionSort_PN.InsertionSort(testArray);
+            InsertionSort_PN.InsertionSortGen(testArray);
 
             // Print the sorted array
             Console.WriteLine("Sorted array:");

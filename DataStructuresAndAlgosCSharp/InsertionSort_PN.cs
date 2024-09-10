@@ -32,7 +32,7 @@ namespace DataStructuresAndAlgosCSharp
             }
         }
 
-        public static void InsertionSort<T>(T[] items) where T : IComparable<T>
+        public static void InsertionSortGen<T>(T[] items) where T : IComparable<T>
         {
             for (int i = 1; i < items.Length; i++)
             {

@@ -27,9 +27,16 @@
       <AssemblyReference>System.Xml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap2010:WorkflowViewState.IdRef="Flowchart_1" StartNode="{x:Reference __ReferenceID0}">
-    <FlowDecision x:Name="__ReferenceID0" DisplayName="if x &lt; y" sap2010:WorkflowViewState.IdRef="FlowDecision_1" />
-    <sads:DebugSymbol.Symbol>d2NDOlxVc2Vyc1xQYXRub1xzb3VyY2VccmVwb3NcRGF0YVN0cnVjdHVyZXNBbmRBbGdvc0NTaGFycFxXb3JrZmxvd0NvbnNvbGVBcHBsaWNhdGlvbjFcV29ya2Zsb3cxLnhhbWwBHgMhDwIBAQ==</sads:DebugSymbol.Symbol>
+  <Flowchart sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.StartNode>
+      <FlowDecision x:Name="__ReferenceID0" DisplayName="if x &lt; y" sap2010:WorkflowViewState.IdRef="FlowDecision_1" />
+    </Flowchart.StartNode>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <FlowSwitch x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_1" />
+    <FlowStep sap2010:WorkflowViewState.IdRef="FlowStep_1">
+      <DoWhile sap2010:WorkflowViewState.IdRef="DoWhile_1" />
+    </FlowStep>
+    <sads:DebugSymbol.Symbol>d2NDOlxVc2Vyc1xQYXRub1xzb3VyY2VccmVwb3NcRGF0YVN0cnVjdHVyZXNBbmRBbGdvc0NTaGFycFxXb3JrZmxvd0NvbnNvbGVBcHBsaWNhdGlvbjFcV29ya2Zsb3cxLnhhbWwBHgMoDwIBAQ==</sads:DebugSymbol.Symbol>
   </Flowchart>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -39,6 +46,30 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <av:Point x:Key="ShapeLocation">395,136.4</av:Point>
             <av:Size x:Key="ShapeSize">70,87.2</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowSwitch`1_1" sap:VirtualizedContainerService.HintSize="70,87.2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <av:Point x:Key="ShapeLocation">35,46.4</av:Point>
+            <av:Size x:Key="ShapeSize">70,87.2</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="DoWhile_1" sap:VirtualizedContainerService.HintSize="464,226">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">120,234.02</av:Point>
+            <av:Size x:Key="ShapeSize">200,52.4</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>

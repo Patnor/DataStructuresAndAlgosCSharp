@@ -1,4 +1,5 @@
-﻿namespace DataStructuresAndAlgosCSharp
+﻿
+namespace DataStructuresAndAlgosCSharp
 {
     internal class Program
     {
@@ -27,6 +28,27 @@
             Console.WriteLine("Bubble sorted arry:");
             BubbleSort_PN.BubbleSort(testArrayBubble);
             PrintArray(testArrayBubble);
+
+            // Bubble sort generics
+            string[] stringBubble = { "Patrick", "Sammy", "sammy", "Micah", "hutch", "Starsky" };
+
+            Console.WriteLine("Original Generic Array");
+            printArrayGeneric(stringBubble);
+
+            Console.WriteLine("Sorted Generic Array");
+            BubbleSort_PN.BubbleSortString(stringBubble);
+            printArrayGeneric(stringBubble);
+
+           
+        }
+
+        private static void printArrayGeneric<T>(T[] array)
+        {
+            foreach (T item in array)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
         }
 
         // Helper method to print the array

@@ -15,9 +15,10 @@ namespace DataStructuresAndAlgosCSharp {
     {
         public static void BubbleSort(int[] array)
         {
+            Console.WriteLine("in bubble");
             for(int i = 0; i < array.Length - 1; i++)
             {
-                for(int j = i; j < array.Length -1 - i; j++)
+                for(int j = 0; j < array.Length -1 - i; j++)
                 {
                     if (array[j] > array[j + 1])
                     {
@@ -37,7 +38,56 @@ namespace DataStructuresAndAlgosCSharp {
 
         public static void BubbleSort<T>(T[] array) where T : IComparable<T>
         {
+            Console.WriteLine("in bubble generic");
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                for (int j = 0; j < array.Length - 1 - i; j++)
+                {
+                    if (array[j].CompareTo(array[j + 1]) > 0)
+                    {
+                        (array[j], array[j + 1]) = (array[j + 1], array[j]);
+                    }
+                }
+            }
+        }
 
+
+
+        public static void BubbleSort2<T>(T[] arr) where T : IComparable<T>
+        {
+            int n = arr.Length;
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = 0; j < n - i - 1; j++)
+                {
+                    if (arr[j].CompareTo(arr[j + 1]) > 0)
+                    {
+                        // Swap elements
+                        T temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+        }
+
+        public static void BubbleSortString(String[] arr) 
+        {
+            Console.WriteLine("in bubblesort string");
+            int n = arr.Length;
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = 0; j < n - i - 1; j++)
+                {
+                    if (arr[j].CompareTo(arr[j + 1]) > 0)
+                    {
+                        // Swap elements
+                        String temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
         }
     }
 }

@@ -39,7 +39,25 @@ namespace DataStructuresAndAlgosCSharp
             BubbleSort_PN.BubbleSortString(stringBubble);
             printArrayGeneric(stringBubble);
 
-           
+            // Merge Sort
+            int[] testArrayMerge = { 5, 2, 9, 1, 5, 6 };
+
+            Console.WriteLine("Original merge array:");
+            PrintArray(testArrayMerge);
+
+            Console.WriteLine("Merge sorted array:");
+            MergeSort_PN.MergeSort(testArrayMerge);
+            PrintArray(testArrayMerge);
+
+            string[] stringMerge = { "Patrick", "Sammy", "sammy", "Micah", "hutch", "Starsky" };
+
+            Console.WriteLine("Original Merge Generic Array");
+            printArrayGeneric(stringMerge);
+
+            Console.WriteLine("Merge Sorted Generic Array");
+            MergeSort_PN.MergeSort(stringMerge);
+            printArrayGeneric(stringMerge);
+
         }
 
         private static void printArrayGeneric<T>(T[] array)

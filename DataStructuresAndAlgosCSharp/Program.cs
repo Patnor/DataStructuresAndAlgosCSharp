@@ -58,6 +58,25 @@ namespace DataStructuresAndAlgosCSharp
             MergeSort_PN.MergeSort(stringMerge);
             printArrayGeneric(stringMerge);
 
+            // Selection sort ******************************************************************
+            Console.WriteLine();
+            int[] testArraySelect = { 5, 2, 9, 1, 5, 6 };
+
+            Console.WriteLine("Original selection array:");
+            PrintArray(testArraySelect);
+
+            Console.WriteLine("Selection sorted array:");
+            SelectionSort_PN.SelectionSort(testArraySelect);
+            PrintArray(testArraySelect);
+
+            string[] stringSelect = { "Patrick", "Sammy", "sammy", "Micah", "hutch", "Starsky" };
+
+            Console.WriteLine("Original Selection Generic Array");
+            printArrayGeneric(stringSelect);
+
+            Console.WriteLine("Selection Sorted Generic Array");
+            SelectionSort_PN.SelectionSort(stringSelect);
+            printArrayGeneric(stringSelect);
         }
 
         private static void printArrayGeneric<T>(T[] array)

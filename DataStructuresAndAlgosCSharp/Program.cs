@@ -69,7 +69,7 @@ namespace DataStructuresAndAlgosCSharp
             SelectionSort_PN.SelectionSort(testArraySelect);
             PrintArray(testArraySelect);
 
-            string[] stringSelect = { "Patrick", "Sammy", "sammy", "Micah", "hutch", "Starsky" };
+            string[] stringSelect = { "Patrick", "Sammy", "sammy", "Micah", "hutch", "Starsky", "Abby" };
 
             Console.WriteLine("Original Selection Generic Array");
             printArrayGeneric(stringSelect);

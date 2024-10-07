@@ -21,17 +21,34 @@ namespace DataStructuresAndAlgosCSharp
                     {
                         min = j;
                     }
-                    if(min != i)
-                    {
-                        (a[i], a[min]) = (a[min], a[i]);
-                    }
+
+                }
+                if (min != i)
+                {
+                    (a[i], a[min]) = (a[min], a[i]);
                 }
             }
         }
 
         public static void SelectionSort<T>(T[] a) where T : IComparable<T>
         {
-           
+           for(int i = 0; i < a.Length - 1; i++)
+            {
+                int min = i;
+
+                for(int j = i + 1; j < a.Length; j++)
+                {
+                    if (a[j].CompareTo(a[min]) < 0)
+                    {
+                        min = j;
+                    }
+                }
+
+                if(min != i)
+                {
+                    (a[i], a[min]) = (a[min], a[i]);
+                }
+            }
         }
     }
 }
